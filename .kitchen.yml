@@ -41,9 +41,9 @@ verifier:
 
 
 suites:
-  - name: server_single
+  - name: server-single
     provisioner:
       pillars-from-files:
-        ulogd.sls: tests/pillar/server_single.sls
+        ulogd.sls: tests/pillar/server-single.sls
 
 # vim: ft=yaml sw=2 ts=2 sts=2 tw=125
