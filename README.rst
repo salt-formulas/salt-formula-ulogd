@@ -90,6 +90,18 @@ Single ulogd service
                 - create 640 ulog adm
                 - postrotate: "invoke-rc.d ulogd2 reload > /dev/null"
 
+Build Steps
+===========
+
+.. code-block:: bash
+
+    docker run --rm -it -v $PWD:/mnt ubuntu:latest bash
+    cd /mnt
+    apt update
+    apt-get install -y build-essential devscripts equivs git-buildpackage python-dev python-virtualenv sudo
+    mk-build-deps -t "apt-get -o Debug::pkgProblemResolver=yes -y" -i debian/control
+    debuild --no-lintian -uc -us -b
+    mv ../*.deb .
 
 References
 ==========
