@@ -1,0 +1,10 @@
+applications:
+- ulogd
+classes:
+- service.ulogd.support
+parameters:
+  ulogd:
+    server:
+      enabled: true
+      bind:
+        address: 0.0.0.0

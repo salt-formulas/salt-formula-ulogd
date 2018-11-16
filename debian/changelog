@@ -1,0 +1,5 @@
+salt-formula-ulogd (2018.1) xenial; urgency=medium
+
+  * Initial release
+
+ -- Petr Ruzicka pruzicka@mirantis.com  Tue, 07 Aug 2018 12:57:21 BST

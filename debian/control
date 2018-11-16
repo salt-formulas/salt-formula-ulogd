@@ -1,0 +1,15 @@
+Source: salt-formula-ulogd
+Maintainer: Petr Ruzicka <pruzicka@mirantis.com>
+Section: admin
+Priority: optional
+Build-Depends: debhelper (>= 9), python, python-yaml
+Standards-Version: 3.9.6
+Homepage: https://github.com/salt-formulas
+Vcs-Browser: https://github.com/salt-formulas/salt-formula-ulogd
+Vcs-Git: https://github.com/salt-formulas/salt-formula-ulogd.git
+
+Package: salt-formula-ulogd
+Architecture: all
+Depends: ${misc:Depends}
+Description: ulogd salt formula
+ Install and configure ulogd.
