@@ -43,7 +43,7 @@ Single ulogd service
 
           [sys2]
           facility=LOG_LOCAL2
-
+          level=LOG_NOTICE
     ...
     ...
     linux:
@@ -67,6 +67,7 @@ Single ulogd service
               umask: 0022
               sync: false
               enabled: true
+              stop_processing: true
           remote:
             192.168.1.1:
               action: "@@192.168.1.1:514"
